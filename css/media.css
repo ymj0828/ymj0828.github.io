@@ -93,9 +93,6 @@ font-family: 'Nanum Gothic', sans-serif;
 		flex-direction: row;
 		margin-bottom: 10px;
 	}
-	#content2 .recomcont .travel .img{
-		flex:0.8;
-	}
 
 	/* 3-3. 컨텐츠3 */
 	#content3 .contwrap{
