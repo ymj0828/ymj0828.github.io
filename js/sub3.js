@@ -1,56 +1,51 @@
 $(() => {
-  // 호출확인
-  console.log("로딩완료!");
-
 	let timer;
-	let tooltip=$("#tooltip");
+	let tooltip=$('#tooltip');
 	let path = $('svg path');
 
-	path.on('mouseenter',function(e){
+	path.mouseenter(function(e){
 		let pathId = $(this).attr('id')
 		switch(pathId){
-			case "IT-62":
-				onOver(e, '로마')
-				$(this).on("mousemove",onMove);
-				$(this).on("mouseleave",onOut);	
+			case 'IT-62':
+				over(e, '로마')
+				$(this).mousemove(move);
+				$(this).mouseout(out);
 				break;
-			case "IT-82":
-				onOver(e, '시칠리아')
-				$(this).on("mousemove",onMove);
-				$(this).on("mouseleave",onOut);	
+			case 'IT-82':
+				over(e, '시칠리아')
+				$(this).mousemove(move);
+				$(this).mouseout(out);
 				break;
-			case "IT-25":
-				onOver(e, '밀라노')
-				$(this).on("mousemove",onMove);
-				$(this).on("mouseleave",onOut);	
+			case 'IT-25':
+				over(e, '밀라노')
+				$(this).mousemove(move);
+				$(this).mouseout(out);
 				break;
-			case "IT-34":
-				onOver(e, '베네치아')
-				$(this).on("mousemove",onMove);
-				$(this).on("mouseleave",onOut);	
+			case 'IT-34':
+				over(e, '베네치아')
+				$(this).mousemove(move);
+				$(this).mouseout(out);
 				break;
-			case "IT-52":
-				onOver(e, '피렌체')
-				$(this).on("mousemove",onMove);
-				$(this).on("mouseleave",onOut);	
+			case 'IT-52':
+				over(e, '피렌체')
+				$(this).mousemove(move);
+				$(this).mouseout(out);
+				break;
 		}
 	})
     
-	function onOver(e, name){
-		tooltip.text(name).stop().show().css({"left":e.pageX+10, "top":e.pageY+10})
-		timer=setTimeout(onOut,3000); // 중요) setTimerout() 함수 : 일정한시간후에 함수를 실행 
+	function over(e, name){
+		tooltip.text(name).stop().show().css({'left':e.pageX + 10, 'top':e.pageY + 10});
+		timer=setTimeout(out, 3000);
 	}
 	
-	function onMove(e){
-		tooltip.css({"left":e.pageX+10, "top":e.pageY+10});	 
-		// 마우스를 움직일때도 툴팁의좌표를 마우스의 좌표의 10간격을 두고 따라다니게 지정 	
+	function move(e){
+		tooltip.css({'left':e.pageX + 10, 'top':e.pageY + 10});	 
 	}
 	
-	function onOut(){
-		clearTimeout(timer); // 진행되고있는 setTimeout을 해제
+	function out(){
+		clearTimeout(timer);
 		tooltip.stop().hide();
-
-		// 마우스가 아웃되면 툴팁의 투명도를 0 으로에니메니션 주고 사라지게함 
 	}
 
 });

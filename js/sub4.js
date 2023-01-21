@@ -1,61 +1,56 @@
 $(() => {
-	// 호출확인
-	console.log("로딩완료!");
-
 	let timer;
-	let tooltip=$("#tooltip");
+	let tooltip=$('#tooltip');
 	let path = $('svg path');
 
-	path.on('mouseenter',function(e){
+	path.mouseenter(function(e){
 		let pathId = $(this).attr('id')
 		switch(pathId){
-			case "VN-41":
-				onOver(e, '호찌민')
-				$(this).on("mousemove",onMove);
-				$(this).on("mouseleave",onOut);	
+			case 'VN-41':
+				over(e, '호찌민')
+				$(this).mousemove(move);
+				$(this).mouseout(out);
 				break;
-			case "VN-15":
-				onOver(e, '하노이')
-				$(this).on("mousemove",onMove);
-				$(this).on("mouseleave",onOut);	
+			case 'VN-15':
+				over(e, '하노이')
+				$(this).mousemove(move);
+				$(this).mouseout(out);
 				break;
-			case "VN-HN":
-				onOver(e, '하노이')
-				$(this).on("mousemove",onMove);
-				$(this).on("mouseleave",onOut);	
+			case 'VN-HN':
+				over(e, '하노이')
+				$(this).mousemove(move);
+				$(this).mouseout(out);
 				break;
-			case "VN-27":
-				onOver(e, '다낭')
-				$(this).on("mousemove",onMove);
-				$(this).on("mouseleave",onOut);	
+			case 'VN-27':
+				over(e, '다낭')
+				$(this).mousemove(move);
+				$(this).mouseout(out);
 				break;
-			case "VN-29":
-				onOver(e, '호이안')
-				$(this).on("mousemove",onMove);
-				$(this).on("mouseleave",onOut);	
+			case 'VN-29':
+				over(e, '호이안')
+				$(this).mousemove(move);
+				$(this).mouseout(out);
 				break;
-			case "VN-26":
-				onOver(e, '후에')
-				$(this).on("mousemove",onMove);
-				$(this).on("mouseleave",onOut);	
+			case 'VN-26':
+				over(e, '후에')
+				$(this).mousemove(move);
+				$(this).mouseout(out);
+				break;
 		}
 	})
 
-	function onOver(e, name){
-		tooltip.text(name).stop().show().css({"left":e.pageX+10, "top":e.pageY+10})
-		timer=setTimeout(onOut,3000); // 중요) setTimerout() 함수 : 일정한시간후에 함수를 실행 
+	function over(e, name){
+		tooltip.text(name).stop().show().css({'left':e.pageX + 10, 'top':e.pageY + 10})
+		timer=setTimeout(out, 3000);
 	}
 	
-	function onMove(e){
-		tooltip.css({"left":e.pageX+10, "top":e.pageY+10});	 
-		// 마우스를 움직일때도 툴팁의좌표를 마우스의 좌표의 10간격을 두고 따라다니게 지정 	
+	function move(e){
+		tooltip.css({'left':e.pageX + 10, 'top':e.pageY + 10});	 
 	}
 	
-	function onOut(){
-		clearTimeout(timer); // 진행되고있는 setTimeout을 해제
+	function out(){
+		clearTimeout(timer);
 		tooltip.stop().hide();
-
-		// 마우스가 아웃되면 툴팁의 투명도를 0 으로에니메니션 주고 사라지게함 
 	}
 
 });

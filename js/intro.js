@@ -1,5 +1,4 @@
 $(() => {
-
     $('video').trigger('pause')
 
     $('.cont').mouseenter(function(){

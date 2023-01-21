@@ -28,9 +28,17 @@ font-family: 'Nanum Gothic', sans-serif;
 		transform: translateX(-50%);
 	}
 	header .inner .gnb,
-    header .inner .sns{
+  header .inner .sns{
 		display: none;
-    }
+	}
+	header .inner .mobtn{
+		position: absolute;
+		left: 30px;
+		bottom: 25px;
+		display: block;
+		font-size: 30px;
+		cursor: pointer;
+	}
 	
 	/* 3. 메인 영역 */
 	/* 3-1. 컨텐츠1 */
@@ -124,14 +132,6 @@ font-family: 'Nanum Gothic', sans-serif;
 	}
 	
 	/* 4. 모바일 메뉴 */
-	header .inner .mobtn{
-		position: absolute;
-		left: 30px;
-		bottom: 25px;
-		display: block;
-		font-size: 30px;
-		cursor: pointer;
-	}
 	#mobx{
 		position: fixed;
 		min-width: 0;
