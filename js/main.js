@@ -1,4 +1,3 @@
-////////// 컨텐츠2 데이터 ///////////////
 const con2data = {
 	"recomtxt1": {
 		"사진1": "1-1",
@@ -68,17 +67,17 @@ const con2data = {
 		"해시태그3": "#디럭스오션뷰UP #럭셔리콘도미니엄",
 		"금액3": "2,421,600원~",
 	}
-}; ////////// 컨텐츠2 데이터 ///////////////
+};
 
 $(() => {
   history.scrollRestoration = "manual"
 
   setTimeout(headopa,3000)
-            
+
 	let section = $('.content')
 	let secIndex = 0;
 	let windowHeight = $(window).innerHeight()
-	let isWheel = false ///// 빠른 스크롤 방지
+	let isWheel = false
 	section.css({height:windowHeight})
 
   window.addEventListener('mousewheel', wheelWindow)
@@ -96,8 +95,7 @@ $(() => {
 			headopa()
 		}
 	}
-    
-  // 빠른 스크롤 방지 기능 포함
+
   function scrollSlide(index){
 		$('body, html').stop().animate({scrollTop:windowHeight*index}, 1000, 'easeOutCubic', function(){
 			isWheel = false;
@@ -250,10 +248,9 @@ $(() => {
 	}
 
 	$(".abtn").click(function(){
-		/// 광클금지 ////////
-		if(prot)return;
-		prot = 1; //잠금!
-		unprot = setTimeout(() => prot = 0, aniT);
+		if(prot) return;
+		prot = 1;
+		setTimeout(() => prot = 0, aniT);
 
 		let isNext = $(this).is(".next");
 		let isPrev = $(this).is(".prev");
@@ -293,8 +290,8 @@ $(() => {
   autoSlide();
 
   function autoSlide(){
-		autoI = setInterval(() => {
-			slide.animate({
+		autoI = setInterval(()=>{
+			slide.stop().animate({
 				left: "-100%"
 			}, aniT, aniE, function(){$(this).append($("li", this).first()).css({left: "0"});
 				slideplay();

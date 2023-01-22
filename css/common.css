@@ -74,13 +74,13 @@ header .inner .sns{
 }
 header .inner .sns a{
 	width: 16px;
-    height: 16px;
-    font-size: 16px;
-    text-align: center;
-    vertical-align: top;
-    line-height: 16px;
-    cursor: pointer;
-    margin-right: 17px;
+	height: 16px;
+	font-size: 16px;
+	text-align: center;
+	vertical-align: top;
+	line-height: 16px;
+	cursor: pointer;
+	margin-right: 17px;
 }
 header .inner .sns a .ir{
 	display: block;
@@ -88,14 +88,12 @@ header .inner .sns a .ir{
 	height: 0;
 	overflow: hidden;
   }
-/* 유튜브 아이콘 조정 */
 header .inner .sns a.fi-youtube-play{
-    font-size: 11px;
+  font-size: 11px;
 }
-/* 유튜브 가상요소 세부조정 */
 header .inner .sns a.fi-youtube-play::before{
-    transform: scaleY(1.2);
-    display: inline-block;
+	transform: scaleY(1.2);
+	display: inline-block;
 }
 
 /* 4. 모바일 메뉴 */
@@ -174,12 +172,10 @@ header .inner .mobtn{
 		height: 0;
 		overflow: hidden;
 	}
-	/* 유튜브 아이콘 조정 */
 	#mobx .mosns a.fi-youtube-play{
 		transform: translateY(0.25px);
 		font-size: 12px;
 	}
-	/* 유튜브 가상요소 세부조정 */
 	#mobx .mosns a.fi-youtube-play::before{
 		transform: scaleY(1.2);
 		display: inline-block;

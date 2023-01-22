@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 @import url(reset.css);
 @import url(common.css);
 
@@ -155,21 +154,21 @@ html, body {
 	content: '';
 	background: url(../images/spr_com.png);
 	top: 12px;
-    left: 13px;
+  left: 13px;
 	width: 12px;
 	height: 16px;
 }
 #content1 .slidebox .slidewrap .control .prev::after {
-    background-position: -405px -182px;
+  background-position: -405px -182px;
 }
 #content1 .slidebox .slidewrap .control .next::after {
-    background-position: -418px -182px;
+  background-position: -418px -182px;
 }
 #content1 .slidebox .slidewrap .control .pause::after {
-    background-position: -431px -182px;
+  background-position: -431px -182px;
 }
 #content1 .slidebox .slidewrap .control .play::after {
-    background-position: -444px -182px;
+  background-position: -444px -182px;
 }
 #content1 i{
 	display: none;
