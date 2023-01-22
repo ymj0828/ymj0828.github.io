@@ -5,7 +5,7 @@
 @import url(sub_common.css);
 
 #subCont1{
-  background: url(../images/터키1.jpg) no-repeat top/cover;
+  background: url(../images/튀르키예.jpg) no-repeat top/cover;
 }
 #subCont1 .amt{
   background: linear-gradient(0deg, rgb(181, 116, 116) 0%, rgba(181, 116, 116,0.9) 60%, rgba(255,255,255,0) 100%);
