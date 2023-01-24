@@ -293,7 +293,8 @@ $(() => {
 		autoI = setInterval(()=>{
 			slide.stop().animate({
 				left: "-100%"
-			}, aniT, aniE, function(){$(this).append($("li", this).first()).css({left: "0"});
+			}, aniT, aniE, function(){
+				$(this).append($("li", this).first()).css({left: "0"});
 				slideplay();
 			});
 		}, 3000);
