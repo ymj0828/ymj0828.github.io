@@ -84,39 +84,38 @@ const con2data = {
 
 $(() => {
 	
-	const gnb = document.querySelector('.gnb')
-	const gnb_2depth = document.querySelectorAll('.gnb_2depth')
-	const gnb_first_li = document.querySelectorAll('.gnb_first>li')
-	const not_gnb_first = document.querySelectorAll('.gnb_2depth:not(.gnb_first)')
-	const smenu_wrap = document.querySelector('.smenu_wrap')
+	const gnb = document.querySelector('.gnb');
+	const gnb_2depth = document.querySelectorAll('.gnb_2depth');
+	const gnb_first_li = document.querySelectorAll('.gnb_first>li');
+	const not_gnb_first = document.querySelectorAll('.gnb_2depth:not(.gnb_first)');
+	const smenu_wrap = document.querySelector('.smenu_wrap');
 	let window_width
 
-
-	gnb_2depth.forEach(function(ele){
+	gnb_2depth.forEach((ele)=>{
 	
-		gnb.addEventListener('mouseenter', function(){
+		gnb.addEventListener('mouseenter', ()=>{
 			smenu_wrap.style.display='block'
 			ele.style.display='block'
-		})
-		gnb.addEventListener('mouseleave', function(){
+		});
+		gnb.addEventListener('mouseleave', ()=>{
 			smenu_wrap.style.display='none'
 			ele.style.display='none'
-		})
-		smenu_wrap.addEventListener('mouseenter', function(){
+		});
+		smenu_wrap.addEventListener('mouseenter', ()=>{
 			smenu_wrap.style.display='block'
 			ele.style.display='block'
-		})
-		smenu_wrap.addEventListener('mouseleave', function(){
+		});
+		smenu_wrap.addEventListener('mouseleave', ()=>{
 			smenu_wrap.style.display='none'
 			ele.style.display='none'
-		})
+		});
 
-	})
+	});
 		
 
-	$(window).on('load resize', function() { 		
+	$(window).on('load resize', ()=>{ 		
 		window_width = window.innerWidth
-	})
+	});
 	
 
 	gnb_first_li.forEach(function(gnb_first_li_ele){
@@ -241,35 +240,34 @@ $(() => {
 	populer_slide.appendChild(tape)
 	tape.classList.add('tape')
 	
-	$(window).resize(() => {
+	window.addEventListener('resize', ()=>{
 
 		populer_slide.appendChild(tape)
 		tape.classList.add('tape')
+	})
 
-	});
-	
 
 	$('.cat_slide').mousedown((e)=>{
 		e.preventDefault()
 	})
 	
-	const cat_item = $('.cat_item li')
+	const cat_item = document.querySelectorAll('.cat_item li')
 	
-	$(cat_item[0]).addClass('on')
+	cat_item[0].classList.add('on')
 	cat_item[0].children[0].src = `./images/content4_cat_1_act.png`
 	
-	fn('스킨케어')
+	slickAdd('스킨케어')
 
-  cat_item.each((num, cat_item_click)=>{
-		cat_item_click.addEventListener('click', function(){
+  cat_item.forEach((cat_item_click)=>{
+		cat_item_click.addEventListener('click', ()=>{
 
 			if(cat_item_click.classList.contains('on')) return;
 			
-			cat_item.each((num,cat_item_el)=>{
-				$(cat_item_el).removeClass('on');
-				$(cat_item_click).addClass('on');
+			cat_item.forEach((cat_item_el, num)=>{
+				cat_item_el.classList.remove('on');
+				cat_item_click.classList.add('on');
 
-				if($(cat_item_el).hasClass('on')){
+				if(cat_item_el.classList.contains('on')){
 					cat_item_el.children[0].src = `./images/content4_cat_${num+1}_act.png`
 				}else{
 					cat_item_el.children[0].src = `./images/content4_cat_${num+1}.png`
@@ -280,57 +278,32 @@ $(() => {
 			
       const innertext = cat_item_click.children[1].innerText
 
-			fn(innertext)
+			slickAdd(innertext)
 			
-			
-			// 	$('.cat_slide').slick({
-				// 		infinite:true,
-				// 		slidesToShow:4,
-				// 		slidesToScroll:4,
-				// 		dots:true
-				// })
-		// 		var slider = $('.slider');  	
-		// 		var slickOptions = { 		
-		// 			infinite: true, 		
-		// 			slidesToShow: 1, 		
-		// 			slidesToScroll: 1, 		
-		// 			dots:true, 		
-		// 			arrows:true 	
-		// 	};  	
-		// $(window).on('load resize', function() { 		
-		// 		if($(window).width() < 767) { 			
-		// 			slider.slick('unslick'); 		
-		// 		}else{ 			
-		// 			slider.not('.slick-initialized').slick(slickOptions); 		
-		// 		} 
-		// 	})
-			
-
 		})
   })
 	
-
-	function fn(key){
+	function slickAdd(key){
 		
-		con2data[key].사진.forEach((b, a)=>{
+		con2data[key].사진.forEach((ele, con2data_num)=>{
 			
 			$('.cat_slide').slick('slickAdd',`
 			<div>
 			<div>
 			<li>
 			<div class='img'>
-			<img src="./images/content4_${con2data[key].사진[a]}.jpg" alt="">
+			<img src="./images/content4_${con2data[key].사진[con2data_num]}.jpg" alt="">
 			<div class="icon_wrap">
 			<div class="wish"></div>
 			<div class="cart"></div>
 			</div>
 			</div>
 			<div class='txt'>
-			<div class="txt1">${con2data[key].상품명[a]}</div>
-			<div class="txt2">${con2data[key].기존가[a]}</div>
-			<div class="txt3">${con2data[key].판매가[a]}
+			<div class="txt1">${con2data[key].상품명[con2data_num]}</div>
+			<div class="txt2">${con2data[key].기존가[con2data_num]}</div>
+			<div class="txt3">${con2data[key].판매가[con2data_num]}
 			<div class="txt4">
-			<span class="star"></span>${con2data[key].평점[a]}<span class="rev">${con2data[key].리뷰수[a]}</span>
+			<span class="star"></span>${con2data[key].평점[con2data_num]}<span class="rev">${con2data[key].리뷰수[con2data_num]}</span>
 			</div>
 			</div>
 			</div>
@@ -344,76 +317,70 @@ $(() => {
 	}
 
 	let scroll_top;
-	const top_btn = $('.top_btn')
 	let is_top_btn = 0;
+	const top_btn = document.querySelector('.top_btn')
+  const scroll = document.querySelectorAll('.scroll');
 	const scroll_arr = [];
-  const scroll = $(".scroll");
-  const gap = $(window).height();
+  const gap = window.innerHeight;
 
-  scroll.each((scroll_num, scroll_ele)=>{
-    scroll_arr[scroll_num] = $(scroll_ele).offset().top;
+  scroll.forEach((scroll_ele, scroll_num)=>{
+    scroll_arr[scroll_num] = scroll_ele.getBoundingClientRect().top;
   });	
 
-	console.log(scroll_arr)
-
 	function scAction(n){
-    if(scroll_top > scroll_arr[n] - gap - 150 /* && scroll_top < scroll_arr[n] + 300 */){
-      scroll.eq(n).addClass("on");
+    if(scroll_top > scroll_arr[n] - gap - 150){
+      scroll[n].classList.add('on');
     }
     else{
-      scroll.eq(n).removeClass("on");
+      scroll[n].classList.remove('on');
     }
   };
 
+	window.addEventListener('resize', ()=>{
+		scroll.forEach((scroll_ele, scroll_num)=>{
+			scroll_arr[scroll_num] = scroll_ele.getBoundingClientRect().top
+		});
+	});
 
-	$(window).resize(() => {
+  window.addEventListener('scroll', ()=>{
 
-		scroll.each((scroll_num, scroll_ele) =>
-		scroll_arr[scroll_num] = $(scroll_ele).offset().top);
-		console.log(scroll_arr)
+		scroll_top = window.scrollY;
 
-});
+		scroll.forEach((ele, scroll_num)=>{
+			scAction(scroll_num)
+		});
 
-    $(window).scroll(function(){
+		if(scroll_top >= 300){
 
-			scroll_top = $(this).scrollTop();
+			if(is_top_btn) return
+			is_top_btn = 1;
 
-			console.log(scroll_top);
-			// console.log(is_top_btn);
+			$(top_btn).css({display:'block'})
+			$(top_btn).animate({opacity:'1'}, 300)
 
-			scroll.each((scroll_num)=>scAction(scroll_num));
+		}else{
 
-			if (scroll_top >= 300) {
-				if(is_top_btn) return
-				is_top_btn = 1;
-				top_btn.css({display:'block'})
-				top_btn.animate({opacity:'1'},300)
+			if(!is_top_btn) return
+			is_top_btn = 0;
 
-			}
-			else {
-				if(!is_top_btn) return
-				is_top_btn = 0;
-				top_btn.animate({opacity:'0'},300, function(){
-				top_btn.css({display:'none'})
-
-				})
-
-			}
+			$(top_btn).animate({opacity:'0'}, 300, ()=>{
+				$(top_btn).css({display:'none'})
+			})
+		}
 
 	});
 
-	top_btn.click(() => {
+	top_btn.addEventListener('click', ()=>{
 		$("html,body").animate({scrollTop: "0"}, 800, "easeOutQuart");
 	});
 
 
-	$("a").click(function(){
+	const atag = document.querySelectorAll('a')
+
+	$(atag).click(function(){
 		if(this.href=='javascript:;'){
 			alert("홈, 로그인, FAQ 페이지만 들어가실 수 있습니다.");
 		};
 	});
-
-
-
 
 });
