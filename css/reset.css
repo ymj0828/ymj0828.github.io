@@ -50,5 +50,5 @@ table {
 a{
 	text-decoration: none;
 	color:#000;
-	outline: none;
+	/* outline: none; */
 }
