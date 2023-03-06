@@ -26,7 +26,6 @@ const faqdata = {
 };
 
 $(() => {
-	history.scrollRestoration = "manual"
 	
 	const gnb = document.querySelector('.gnb');
 	const gnb_2depth = document.querySelectorAll('.gnb_2depth');
