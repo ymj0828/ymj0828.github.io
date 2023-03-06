@@ -26,7 +26,11 @@ const faqdata = {
 };
 
 $(() => {
-	
+
+	if (history.scrollRestoration) {
+		history.scrollRestoration = 'manual';
+	}
+
 	const gnb = document.querySelector('.gnb');
 	const gnb_2depth = document.querySelectorAll('.gnb_2depth');
 	const gnb_first_li = document.querySelectorAll('.gnb_first>li');
