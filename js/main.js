@@ -85,7 +85,7 @@ const con4data = {
 $(() => {
 
 	window.addEventListener('load', ()=>{
-		if ('scrollRestoration' in history) {
+		if (history.scrollRestoration) {
 			history.scrollRestoration = 'manual';
 		}
 	})
