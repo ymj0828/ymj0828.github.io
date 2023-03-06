@@ -27,48 +27,39 @@ const faqdata = {
 
 $(() => {
 	
-	const mobile_nav_btn = document.querySelector('.mobile_nav_btn')
-	const mobile_nav = document.querySelector('.mobile_nav')
-
-	mobile_nav_btn.addEventListener('click', function(){
-		$(mobile_nav_btn).toggleClass('on')
-		$(mobile_nav).stop().slideToggle(200)
-	});
-		
-
-	const gnb = document.querySelector('.gnb')
-	const gnb_2depth = document.querySelectorAll('.gnb_2depth')
-	const gnb_first_li = document.querySelectorAll('.gnb_first>li')
-	const not_gnb_first = document.querySelectorAll('.gnb_2depth:not(.gnb_first)')
+	const gnb = document.querySelector('.gnb');
+	const gnb_2depth = document.querySelectorAll('.gnb_2depth');
+	const gnb_first_li = document.querySelectorAll('.gnb_first>li');
+	const not_gnb_first = document.querySelectorAll('.gnb_2depth:not(.gnb_first)');
 	const smenu_wrap = document.querySelector('.smenu_wrap')
 	let window_width
 
 
-	gnb_2depth.forEach(function(ele){
+	gnb_2depth.forEach((ele)=>{
 	
-		gnb.addEventListener('mouseenter', function(){
+		gnb.addEventListener('mouseenter', ()=>{
 			smenu_wrap.style.display='block'
 			ele.style.display='block'
-		})
-		gnb.addEventListener('mouseleave', function(){
+		});
+		gnb.addEventListener('mouseleave', ()=>{
 			smenu_wrap.style.display='none'
 			ele.style.display='none'
-		})
-		smenu_wrap.addEventListener('mouseenter', function(){
+		});
+		smenu_wrap.addEventListener('mouseenter', ()=>{
 			smenu_wrap.style.display='block'
 			ele.style.display='block'
-		})
-		smenu_wrap.addEventListener('mouseleave', function(){
+		});
+		smenu_wrap.addEventListener('mouseleave', ()=>{
 			smenu_wrap.style.display='none'
 			ele.style.display='none'
-		})
+		});
 
-	})
+	});
 		
 
-	$(window).on('load resize', function() { 		
+	$(window).on('load resize', ()=>{ 		
 		window_width = window.innerWidth
-	})
+	});
 	
 
 	gnb_first_li.forEach(function(gnb_first_li_ele){
@@ -103,27 +94,33 @@ $(() => {
 		})
 	})
 
+
+	const mobile_nav_btn = document.querySelector('.mobile_nav_btn')
+	const mobile_nav = document.querySelector('.mobile_nav')
+
+	mobile_nav_btn.addEventListener('click', ()=>{
+		$(mobile_nav_btn).toggleClass('on')
+		$(mobile_nav).stop().slideToggle(200)
+	});
+
+
 	const board_list = document.querySelector('.board_list');
 	const tab_li = document.querySelectorAll('.tab li')
 	const tab_opt= document.querySelectorAll('.mobile_tab')
 
-	
 	tab_opt.forEach((tab_opt_ele_change)=>{
-		tab_opt_ele_change.addEventListener('change', function(){
-
+		tab_opt_ele_change.addEventListener('change', ()=>{
 			textIf(tab_opt_ele_change.value)
-
 		})
 	})
 
-	
 	Object.keys(faqdata).forEach((faqdata_key_ele)=>{
 		faqdataHtml(faqdata_key_ele)
 	})
 	tab_li[0].classList.add('active')
 
 	tab_li.forEach((tab_li_ele_click)=>{
-		tab_li_ele_click.addEventListener('click', function(){
+		tab_li_ele_click.addEventListener('click', ()=>{
 
 			if(tab_li_ele_click.classList.contains('active')) return;
 
@@ -132,13 +129,10 @@ $(() => {
 			})
 			tab_li_ele_click.classList.add('active')
 
-
 			textIf(tab_li_ele_click.innerText)
 
 		})
 	})
-
-
 
 	function textIf(tab_text){
 		board_list.innerHTML=''
@@ -171,40 +165,40 @@ $(() => {
 
 	function boardSlide(){
 
-		const board_li = $('.board_list li')
-		const board_answer = $('.board_answer')
-		const board_btn = $('.board_btn')
+		const board_li = document.querySelectorAll('.board_list li')
+		const board_answer = document.querySelectorAll('.board_answer')
+		const board_btn = document.querySelectorAll('.board_btn')
 
-		board_li.each((board_li_num_click, board_li_ele_click)=>{
-			board_li_ele_click.addEventListener('click', function(){
+		board_li.forEach((board_li_ele_click, board_li_num_click)=>{
+			board_li_ele_click.addEventListener('click', ()=>{
 
-				board_li.each((num, board_li_ele)=>{
-					$(board_li_ele).css({backgroundColor:'#fff'})
+				board_li.forEach((board_li_ele)=>{
+					board_li_ele.style.backgroundColor='#fff'
 				})
-				board_answer.each((num, board_answer_ele)=>{
+				board_answer.forEach((board_answer_ele)=>{
 					$(board_answer_ele).slideUp(300)
 				})
-				board_btn.each((num, board_btn_ele)=>{
-					$(board_btn_ele).removeClass('active')
+				board_btn.forEach((board_btn_ele)=>{
+					board_btn_ele.classList.remove('active')
 				})
 
 				if($(board_answer[board_li_num_click]).css('display') == 'block') return
 
 				if(window.innerWidth < 721){
-					$(board_li[board_li_num_click]).css({backgroundColor:'#f6f6f6'})
+					board_li[board_li_num_click].style.backgroundColor='#f6f6f6'
 				}
 				$(board_answer[board_li_num_click]).slideDown(300)
-				$(board_btn[board_li_num_click]).addClass('active')
+				board_btn[board_li_num_click].classList.add('active')
+
+			});
+		});
+
+	};
 
 
-			})
+	const atag = document.querySelectorAll('a')
 
-		})
-
-	}
-
-
-	$("a").click(function(){
+	$(atag).click(function(){
 		if(this.href=='javascript:;'){
 			alert("홈, 로그인, FAQ 페이지만 들어가실 수 있습니다.");
 		};
