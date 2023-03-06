@@ -83,9 +83,12 @@ const con4data = {
 
 
 $(() => {
-	if ('scrollRestoration' in history) {
-    history.scrollRestoration = 'manual';
-	}
+
+	window.addEventListener('load', ()=>{
+		if ('scrollRestoration' in history) {
+			history.scrollRestoration = 'manual';
+		}
+	})
 	
 	const gnb = document.querySelector('.gnb');
 	const gnb_2depth = document.querySelectorAll('.gnb_2depth');
