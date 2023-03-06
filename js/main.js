@@ -1,4 +1,4 @@
-const con2data = {
+const con4data = {
 	'스킨케어':{
     사진:['1-1','1-2','1-3','1-4','1-5','1-6','1-7','1-8','1-9','1-10','1-11','1-12'],
 		상품명:['★02/23 순차출고★[당근패드]캐롯 카로틴 카밍 워터 패드 (250g, 60매)','[미나리패드]판토테닉 워터파슬리 클리어 패드 (250g, 60매)','로열허니 프로폴리스 인리치 에센스 (50ml)','[미나리에센스]여드름적합, 판토테닉 워터 파슬리 사일런스 에센스 (50ml)','로열허니 프로폴리스 인리치 멀티 밤(9g)','[당근크림] 캐롯 카로틴 릴리프 크림 (70ml)','[미나리패드 리필]판토테닉 워터파슬리 클리어 패드 리필(30매)','[미나리 토너]여드름적합, 판토테닉 워터 파슬리 토너 (300ml)','로열허니 프로폴리스 인리치 에멀전 (160ml)','[단독SET+증정] 골드 캐비어 이엑스 토너+크림+아이세럼','로열허니 프로폴리스 인리치 크림 미스트(120ml)','흑석류 에너지 세럼 (52ml)'],
@@ -83,6 +83,7 @@ const con2data = {
 
 
 $(() => {
+	history.scrollRestoration = "manual"
 	
 	const gnb = document.querySelector('.gnb');
 	const gnb_2depth = document.querySelectorAll('.gnb_2depth');
@@ -285,25 +286,25 @@ $(() => {
 	
 	function slickAdd(key){
 		
-		con2data[key].사진.forEach((ele, con2data_num)=>{
+		con4data[key].사진.forEach((ele, con4data_num)=>{
 			
 			$('.cat_slide').slick('slickAdd',`
 			<div>
 			<div>
 			<li>
 			<div class='img'>
-			<img src="./images/content4_${con2data[key].사진[con2data_num]}.jpg" alt="">
+			<img src="./images/content4_${con4data[key].사진[con4data_num]}.jpg" alt="인기제품사진">
 			<div class="icon_wrap">
 			<div class="wish"></div>
 			<div class="cart"></div>
 			</div>
 			</div>
 			<div class='txt'>
-			<div class="txt1">${con2data[key].상품명[con2data_num]}</div>
-			<div class="txt2">${con2data[key].기존가[con2data_num]}</div>
-			<div class="txt3">${con2data[key].판매가[con2data_num]}
+			<div class="txt1">${con4data[key].상품명[con4data_num]}</div>
+			<div class="txt2">${con4data[key].기존가[con4data_num]}</div>
+			<div class="txt3">${con4data[key].판매가[con4data_num]}
 			<div class="txt4">
-			<span class="star"></span>${con2data[key].평점[con2data_num]}<span class="rev">${con2data[key].리뷰수[con2data_num]}</span>
+			<span class="star"></span>${con4data[key].평점[con4data_num]}<span class="rev">${con4data[key].리뷰수[con4data_num]}</span>
 			</div>
 			</div>
 			</div>

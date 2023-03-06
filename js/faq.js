@@ -26,6 +26,7 @@ const faqdata = {
 };
 
 $(() => {
+	history.scrollRestoration = "manual"
 	
 	const gnb = document.querySelector('.gnb');
 	const gnb_2depth = document.querySelectorAll('.gnb_2depth');
@@ -33,7 +34,6 @@ $(() => {
 	const not_gnb_first = document.querySelectorAll('.gnb_2depth:not(.gnb_first)');
 	const smenu_wrap = document.querySelector('.smenu_wrap')
 	let window_width
-
 
 	gnb_2depth.forEach((ele)=>{
 	
