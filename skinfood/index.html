@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스킨푸드</title>
+
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/slick.css">
+  <link rel="stylesheet" href="./css/slick-theme.css">
+  <link rel="stylesheet" href="./css/main_media.css">
+
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/jquery-ui.min.js"></script>
+  <script src="./js/slick.js"></script>
+  <script src="./js/main.js"></script>
+
+</head>
+<body>
+  <header>
+    <div class="tmenu_wrap">
+      <div class="tmenu">
+        <ul class="login">
+          <li><a href="./login.html">로그인</a></li>
+          <li><a href="javascript:;">회원가입</a></li>
+          <li><a href="./login.html">마이페이지</a></li>
+          <li><a href="javascript:;">멤버십</a></li>
+          <li><a href="javascript:;">고객센터</a></li>
+        </ul>
+        <select id="lang">
+          <option>KOREAN</option>
+          <option>ENGLISH</option>
+        </select>
+      </div>
+    </div>
+    <div class="menu_wrap">
+      <div class="menu">
+        <h1 class="logo">
+          <a href="./index.html">
+            <img src="./images/스킨푸드로고.png" alt="스킨푸드로고">
+          </a>
+        </h1>
+        <ul class="gnb">
+          <li><a href="javascript:;">상품</a>
+            <ul class="gnb_2depth gnb_first">
+              <li><a href="javascript:;">베스트&신상품</a></li>
+              <li><a href="javascript:;">유형별</a>
+                <ul class="gnb_3depth">
+                  <li>스킨케어</li>
+                  <li>마스크</li>
+                  <li>선</li>
+                  <li>클렌징</li>
+                  <li>바디</li>
+                  <li>헤어</li>
+                  <li>남성</li>
+                  <li>베이스 메이크업</li>
+                  <li>컬러 메이크업</li>
+                  <li>미용 부자재</li>
+                </ul>
+              </li>
+              <li><a href="javascript:;">고민별</a>
+                <ul class="gnb_3depth">
+                  <li>브라이트닝</li>
+                  <li>모공</li>
+                  <li>트러블</li>
+                  <li>보습</li>
+                  <li>수분</li>
+                  <li>진정</li>
+                  <li>안티에이징</li>
+                  <li>각질</li>
+                </ul>
+              </li>
+              <li><a href="javascript:;">라인별</a>
+                <ul class="gnb_3depth line">
+                  <li>골드캐비어</li>
+                  <li>가든빈</li>
+                  <li>당근</li>
+                  <li>도토리</li>
+                  <li>라이스</li>
+                  <li>레몬버베나</li>
+                  <li>토마토</li>
+                  <li>트윙클쿠키</li>
+                  <li>파인애플</li>
+                  <li>포도씨오일</li>
+                  <li>포레스트 다이닝</li>
+                  <li>푸드마스크</li>
+                  <li>로열허니</li>
+                  <li>머쉬룸</li>
+                  <li>밀크쉐이크</li>
+                  <li>버터리</li>
+                  <li>베리</li>
+                  <li>베지가든</li>
+                  <li>프로폴리스</li>
+                  <li>피치뽀송</li>
+                  <li>허니</li>
+                  <li>흑석류</li>
+                  <li>블랙슈가</li>
+                  <li>상추오이</li>
+                  <li>소다</li>
+                  <li>수분포도</li>
+                  <li>수비드</li>
+                  <li>쉬폰</li>
+                  <li>시어버터</li>
+                  <li>아르간오일</li>
+                  <li>아보카도</li>
+                  <li>알로에</li>
+                  <li>에그화이트</li>
+                  <li>연어</li>
+                  <li>워터파슬리</li>
+                  <li>유자</li>
+                  <li>이지드레싱</li>
+                  <li>착한 라인</li>
+                  <li>청포도</li>
+                  <li>초코</li>
+                </ul>
+              </li>
+              <li><a href="javascript:;">타입별</a>
+                <ul class="gnb_3depth">
+                  <li>모든피부</li>
+                  <li>건성</li>
+                  <li>복합성</li>
+                  <li>지성</li>
+                  <li>민감성</li>
+                </ul>
+              </li>
+              <li><a href="javascript:;">패키지</a>
+                <ul class="gnb_3depth">
+                  <li>기획 상품</li>
+                  <li>세트 상품</li>
+                </ul>
+              </li>
+              <li><a href="javascript:;">비건</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:;">이벤트</a>
+            <ul class="gnb_2depth">
+              <li><a href="javascript:;">진행중 이벤트</a></li>
+              <li><a href="javascript:;">종료 이벤트</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:;">리뷰</a>
+            <ul class="gnb_2depth">
+              <li><a href="javascript:;">리뷰</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:;">커뮤니티</a>
+            <ul class="gnb_2depth">
+              <li><a href="javascript:;">멤버십</a></li>
+              <li><a href="./faq.html">FAQ</a></li>
+              <li><a href="javascript:;">공지사항</a></li>
+              <li><a href="javascript:;">매장안내</a></li>
+              <li><a href="./login.html">1:1문의하기</a></li>
+            </ul>
+          </li>
+          <li><a href="javascript:;">어바웃 스킨푸드</a>
+            <ul class="gnb_2depth">
+              <li><a href="javascript:;">브랜드 스토리</a></li>
+              <li><a href="javascript:;">스킨푸드 소식</a></li>
+              <li><a href="javascript:;">사회 공헌</a></li>
+              <li><a href="javascript:;">전자공고</a></li>
+              <li><a href="javascript:;">SNS</a></li>
+              <li><a href="javascript:;">잘버렸습니다 캠페인</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="gnb_icon">
+          <a href="javascript:;" class="search"></a>
+          <a href="javascript:;" class="basket"></a>
+        </div>
+      </div>
+    </div>
+    <div class="smenu_wrap">
+      <div class="smenu">
+        <div class="img">
+          <img src="./images/gnb_비건.jpg" alt="비건포스터">
+        </div>
+      </div>
+    </div>
+    <ul class="mgnb">
+      <li><a href="./index.html">홈</a></li>
+      <li><a href="javascript:;">베스트&신제품</a></li>
+      <li><a href="javascript:;">이벤트</a></li>
+      <li><a href="javascript:;">리뷰</a></li>
+      <li><a href="javascript:;">어바웃 스킨푸드</a></li>
+    </ul>
+  </header>
+
+  <ul class="mquick">
+    <li><a href="./index.html">홈</a></li>
+    <li><a href="javascript:;">카테고리</a></li>
+    <li><a href="./login.html">마이페이지</a></li>
+    <li><a href="javascript:;">멤버십</a></li>
+    <li><a href="javascript:;">최근본상품</a></li>
+  </ul>
+
+  <div id="content1">
+    <ul class="main_slide">
+      <li><img src="./images/content1_1.jpg" alt="슬라이드포스터"></li>
+      <li><img src="./images/content1_2.jpg" alt="슬라이드포스터"></li>
+      <li><img src="./images/content1_3.jpg" alt="슬라이드포스터"></li>
+      <li><img src="./images/content1_4.jpg" alt="슬라이드포스터"></li>
+      <li><img src="./images/content1_5.jpg" alt="슬라이드포스터"></li>
+      <li><img src="./images/content1_6.jpg" alt="슬라이드포스터"></li>
+      <li><img src="./images/content1_7.jpg" alt="슬라이드포스터"></li>
+      <li><img src="./images/content1_8.jpg" alt="슬라이드포스터"></li>
+    </ul>
+    <ul class="main_slide_mobile">
+      <li><img src="./images/content1_1_mobile.jpg" alt="모바일슬라이드포스터"></li>
+      <li><img src="./images/content1_2_mobile.jpg" alt="모바일슬라이드포스터"></li>
+      <li><img src="./images/content1_3_mobile.jpg" alt="모바일슬라이드포스터"></li>
+      <li><img src="./images/content1_4_mobile.jpg" alt="모바일슬라이드포스터"></li>
+      <li><img src="./images/content1_5_mobile.jpg" alt="모바일슬라이드포스터"></li>
+      <li><img src="./images/content1_6_mobile.jpg" alt="모바일슬라이드포스터"></li>
+      <li><img src="./images/content1_7_mobile.jpg" alt="모바일슬라이드포스터"></li>
+      <li><img src="./images/content1_8_mobile.jpg" alt="모바일슬라이드포스터"></li>
+    </ul>
+  </div>
+  <div class="banner">
+    <img src="./images/쿠폰배너.jpg" alt="쿠폰배너">
+  </div>
+  <div id="content2" class="content">
+    <p class="scroll">
+      <a href="javascript:;"><strong>한 눈에 보는 추천 제품</strong></a>
+    </p>
+    <ul class="recom_slide scroll">
+      <li>
+        <div class="recom_top">
+          <img src="./images/content2_1-1.jpg" alt="추천제품포스터">
+        </div>
+        <div class="recom_bottom">
+          <div class="recom_bottom_cont">
+            <div class="img">
+              <img src="./images/content2_1-2-1.jpg" alt="추천제품사진">
+            </div>
+            <div class="txt">
+              <div class="txt1">NEW 레몬 버베나 바디 워시 (450ml)</div>
+              <div class="txt2"></div>
+              <div class="txt3">₩ 16,000</div>
+            </div>
+          </div>
+          <div class="recom_bottom_cont">
+            <div class="img">
+              <img src="./images/content2_1-2-2.jpg" alt="추천제품사진">
+            </div>
+            <div class="txt">
+              <div class="txt1">허니 리치 바디 에센스 (450ml)</div>
+              <div class="txt2"></div>
+              <div class="txt3">₩ 16,000</div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="recom_top">
+          <img src="./images/content2_2-1.jpg" alt="추천제품포스터">
+        </div>
+        <div class="recom_bottom">
+          <div class="recom_bottom_cont">
+            <div class="img">
+              <img src="./images/content2_2-2-1.jpg" alt="추천제품사진">
+            </div>
+            <div class="txt">
+              <div class="txt1">[꿀광보습]로열허니 프로폴리스 인리치 마스크(30ml)</div>
+              <div class="txt2"></div>
+              <div class="txt3">₩ 3,000</div>
+            </div>
+          </div>
+          <div class="recom_bottom_cont">
+            <div class="img">
+              <img src="./images/content2_2-2-2.jpg" alt="추천제품사진">
+            </div>
+            <div class="txt">
+              <div class="txt1">[수분진정] 캐롯 카로틴 마스크(당근 마스크)(27ml)</div>
+              <div class="txt2"></div>
+              <div class="txt3">₩ 3,000</div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="recom_top">
+          <img src="./images/content2_3-1.jpg" alt="추천제품포스터">
+        </div>
+        <div class="recom_bottom">
+          <div class="recom_bottom_cont">
+            <div class="img">
+              <img src="./images/content2_3-2-1.jpg" alt="추천제품사진">
+            </div>
+            <div class="txt">
+              <div class="txt1">[비건/혼합자차]NEW 베리 생기 선크림 50ml SPF50+ PA++++</div>
+              <div class="txt2"></div>
+              <div class="txt3">₩ 24,000</div>
+            </div>
+          </div>
+          <div class="recom_bottom_cont">
+            <div class="img">
+              <img src="./images/content2_3-2-2.jpg" alt="추천제품사진">
+            </div>
+            <div class="txt">
+              <div class="txt1">[비건/무기자차]NEW 베리 진정 선크림 50ml SPF50+ PA++++</div>
+              <div class="txt2"></div>
+              <div class="txt3">₩ 24,000</div>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="recom_top">
+          <img src="./images/content2_4-1.jpg" alt="추천제품포스터">
+        </div>
+        <div class="recom_bottom">
+          <div class="recom_bottom_cont">
+            <div class="img">
+              <img src="./images/content2_4-2-1.jpg" alt="추천제품사진">
+            </div>
+            <div class="txt">
+              <div class="txt1">로열허니 프로폴리스 인리치 에센스 (50ml)</div>
+              <div class="txt2"></div>
+              <div class="txt3">₩ 32,000</div>
+            </div>
+          </div>
+          <div class="recom_bottom_cont">
+            <div class="img">
+              <img src="./images/content2_4-2-2.jpg" alt="추천제품사진">
+            </div>
+            <div class="txt">
+              <div class="txt1">로열허니 프로폴리스 인리치 크림 미스트(120ml)</div>
+              <div class="txt2"></div>
+              <div class="txt3">₩ 22,000</div>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="content3">
+    <p class="scroll"><a href="javascript:;">요즘 뜨는 <strong>상품</strong></a></p>
+    <ul class="populer_slide scroll">
+      <li>
+        <div class="img">
+          <img src="./images/content3_1.jpg" alt="상품사진">
+          <div class="icon_wrap">
+            <div class="wish"></div>
+            <div class="cart"></div>
+          </div>
+        </div>
+        <div class="txt">
+          <div class="txt1">[당근토너] 캐롯 카로틴 수딩 토너 300ml</div>
+          <div class="txt2">₩ 24,000</div>
+          <div class="txt3">₩ 15,600
+            <div class="txt4">
+              <span class="star"></span>5<span class="rev">점 (851)</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="img">
+          <img src="./images/content3_2.jpg" alt="상품사진">
+          <div class="icon_wrap">
+            <div class="wish"></div>
+            <div class="cart"></div>
+          </div>
+        </div>
+        <div class="txt">
+          <div class="txt1">로열허니 프로폴리스 인리치 멀티 밤(9g)</div>
+          <div class="txt2">₩ 22,000</div>
+          <div class="txt3">₩ 14,300
+            <div class="txt4">
+              <span class="star"></span>4.9<span class="rev">점 (72)</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="img">
+          <img src="./images/content3_3.jpg" alt="상품사진">
+          <div class="icon_wrap">
+            <div class="wish"></div>
+            <div class="cart"></div>
+          </div>
+        </div>
+        <div class="txt">
+          <div class="txt1">로열허니 착한 수분 크림(100ml)</div>
+          <div class="txt2">₩ 18,000</div>
+          <div class="txt3">₩ 18,000
+            <div class="txt4">
+              <span class="star"></span>4.9<span class="rev">점 (656)</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="img">
+          <img src="./images/content3_4.jpg" alt="상품사진">
+          <div class="icon_wrap">
+            <div class="wish"></div>
+            <div class="cart"></div>
+          </div>
+        </div>
+        <div class="txt">
+          <div class="txt1">[Renewal] 시어버터 퍼퓸드 핸드크림</div>
+          <div class="txt2"></div>
+          <div class="txt3">₩ 5,000
+            <div class="txt4">
+              <span class="star"></span>4.9<span class="rev">점 (287)</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="img">
+          <img src="./images/content3_5.jpg" alt="상품사진">
+          <div class="icon_wrap">
+            <div class="wish"></div>
+            <div class="cart"></div>
+          </div>
+        </div>
+        <div class="txt">
+          <div class="txt1">로열허니 프로폴리스 인리치 배리어 크림 (63ml)</div>
+          <div class="txt2">₩ 33,000</div>
+          <div class="txt3">₩ 19,800
+            <div class="txt4">
+              <span class="star"></span>5<span class="rev">점 (1,628)</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="img">
+          <img src="./images/content3_6.jpg" alt="상품사진">
+          <div class="icon_wrap">
+            <div class="wish"></div>
+            <div class="cart"></div>
+          </div>
+        </div>
+        <div class="txt">
+          <div class="txt1">NEW 인텐시브 시어버터 크림 워시 (450ml)</div>
+          <div class="txt2">₩ 16,000</div>
+          <div class="txt3">₩ 10,400
+            <div class="txt4">
+              <span class="star"></span>4.9<span class="rev">점 (35)</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="img">
+          <img src="./images/content3_7.jpg" alt="상품사진">
+          <div class="icon_wrap">
+            <div class="wish"></div>
+            <div class="cart"></div>
+          </div>
+        </div>
+        <div class="txt">
+          <div class="txt1">골드 캐비어 콜라겐 플러스  아이크림 (30g)</div>
+          <div class="txt2">₩ 53,000</div>
+          <div class="txt3">₩ 34,450
+            <div class="txt4">
+              <span class="star"></span>5<span class="rev">점 (31)</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="img">
+          <img src="./images/content3_8.jpg" alt="상품사진">
+          <div class="icon_wrap">
+            <div class="wish"></div>
+            <div class="cart"></div>
+          </div>
+        </div>
+        <div class="txt">
+          <div class="txt1">[당근크림] 캐롯 카로틴 릴리프 크림 (70ml)</div>
+          <div class="txt2">₩ 32,000</div>
+          <div class="txt3">₩ 20,800
+            <div class="txt4">
+              <span class="star"></span>4.9<span class="rev">점 (1,532)</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="img">
+          <img src="./images/content3_9.jpg" alt="상품사진">
+          <div class="icon_wrap">
+            <div class="wish"></div>
+            <div class="cart"></div>
+          </div>
+        </div>
+        <div class="txt">
+          <div class="txt1">토마토 젤리 틴트 립 (4.5g)</div>
+          <div class="txt2">₩ 5,500</div>
+          <div class="txt3">₩ 4,400
+            <div class="txt4">
+              <span class="star"></span>4.8<span class="rev">점 (120)</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="img">
+          <img src="./images/content3_10.jpg" alt="상품사진">
+          <div class="icon_wrap">
+            <div class="wish"></div>
+            <div class="cart"></div>
+          </div>
+        </div>
+        <div class="txt">
+          <div class="txt1">[비건/무기자차]NEW 베리 진정 선크림 50ml SPF50+ PA++++</div>
+          <div class="txt2">₩ 24,000</div>
+          <div class="txt3">₩ 15,600
+            <div class="txt4">
+              <span class="star"></span>5<span class="rev">점 (99)</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="img">
+          <img src="./images/content3_11.jpg" alt="상품사진">
+          <div class="icon_wrap">
+            <div class="wish"></div>
+            <div class="cart"></div>
+          </div>
+        </div>
+        <div class="txt">
+          <div class="txt1">블랙슈가 퍼펙트 에센셜 스크럽 2X (210g)</div>
+          <div class="txt2">₩ 19,000</div>
+          <div class="txt3">₩ 12,350
+            <div class="txt4">
+              <span class="star"></span>4.9<span class="rev">점 (855)</span>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="img">
+          <img src="./images/content3_12.jpg" alt="상품사진">
+          <div class="icon_wrap">
+            <div class="wish"></div>
+            <div class="cart"></div>
+          </div>
+        </div>
+        <div class="txt">
+          <div class="txt1">라이스 데일리 브라이트닝 마스크 워시오프(210g)</div>
+          <div class="txt2">₩ 19,000</div>
+          <div class="txt3">₩ 12,350
+            <div class="txt4">
+              <span class="star"></span>4.8<span class="rev">점 (209)</span>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  
+  <div id="content4" class="content">
+    <p class="scroll">
+      <strong><a href="javascript:;">카테고리 별 인기템</a></strong>
+    </p>
+    <ul class="cat_item scroll">
+      <li>
+        <img src="./images/content4_cat_1.png" alt="카테고리아이콘">
+        <span>스킨케어</span>
+      </li>
+      <li>
+        <img src="./images/content4_cat_2.png" alt="카테고리아이콘">
+        <span>마스크</span>
+      </li>
+      <li>
+        <img src="./images/content4_cat_3.png" alt="카테고리아이콘">
+        <span>선</span>
+      </li>
+      <li>
+        <img src="./images/content4_cat_4.png" alt="카테고리아이콘">
+        <span>클렌징</span>
+      </li>
+      <li>
+        <img src="./images/content4_cat_5.png" alt="카테고리아이콘">
+        <span>바디</span>
+      </li>
+      <li>
+        <img src="./images/content4_cat_6.png" alt="카테고리아이콘">
+        <span>헤어</span>
+      </li>
+      <li>
+        <img src="./images/content4_cat_7.png" alt="카테고리아이콘">
+        <span>남성</span>
+      </li>
+      <li>
+        <img src="./images/content4_cat_8.png" alt="카테고리아이콘">
+        <span>베이스 메이크업</span>
+      </li>
+      <li>
+        <img src="./images/content4_cat_9.png" alt="카테고리아이콘">
+        <span>컬러 메이크업</span>
+      </li>
+      <li>
+        <img src="./images/content4_cat_10.png" alt="카테고리아이콘">
+        <span>미용 부자재</span>
+      </li>
+    </ul>
+    <ul class="cat_slide scroll">
+    </ul>
+  </div>
+
+  <div id="content5" class="content">
+    <p class="scroll">
+      <strong><a href="javascript:;">포토 리뷰</a></strong>
+    </p>
+    <ul class="review_slide scroll">
+      <li><img src="./images/content5_1.png" alt="슬라이드포스터"></li>
+      <li><img src="./images/content5_2.png" alt="슬라이드포스터"></li>
+      <li><img src="./images/content5_3.png" alt="슬라이드포스터"></li>
+      <li><img src="./images/content5_4.png" alt="슬라이드포스터"></li>
+      <li><img src="./images/content5_5.png" alt="슬라이드포스터"></li>
+      <li><img src="./images/content5_6.png" alt="슬라이드포스터"></li>
+      <li><img src="./images/content5_7.png" alt="슬라이드포스터"></li>
+      <li><img src="./images/content5_8.png" alt="슬라이드포스터"></li>
+      <li><img src="./images/content5_9.png" alt="슬라이드포스터"></li>
+    </ul>
+    <ul class="review_slide_mobile scroll">
+      <li><img src="./images/content5_1_mobile.png" alt="모바일슬라이드포스터"></li>
+      <li><img src="./images/content5_2_mobile.png" alt="모바일슬라이드포스터"></li>
+      <li><img src="./images/content5_3_mobile.png" alt="모바일슬라이드포스터"></li>
+      <li><img src="./images/content5_4_mobile.png" alt="모바일슬라이드포스터"></li>
+      <li><img src="./images/content5_5_mobile.png" alt="모바일슬라이드포스터"></li>
+      <li><img src="./images/content5_6_mobile.png" alt="모바일슬라이드포스터"></li>
+      <li><img src="./images/content5_7_mobile.png" alt="모바일슬라이드포스터"></li>
+      <li><img src="./images/content5_8_mobile.png" alt="모바일슬라이드포스터"></li>
+      <li><img src="./images/content5_9_mobile.png" alt="모바일슬라이드포스터"></li>
+    </ul>
+  </div>
+
+  <div class="banner">
+    <img src="./images/브랜드배너.png" alt="브랜드배너">
+  </div>
+
+  <div id="content6">
+    <div class="instalogo">
+      <div class="img">
+        <img src="./images/content6_인스타.png" alt="인스타그램로고">
+      </div>
+    </div>
+    <div class="instagram">
+      <div class="profile">
+        <div class="profile_img">
+          <img src="./images/content6_스킨푸드프로필.jpg" alt="스킨푸드로고">
+        </div>
+        <div class="profile_use">@skinfood_official</div>
+      </div>
+      <div class="follow">
+        <a href="https://www.instagram.com/skinfood_official/" target="_blank">Follow</a>
+      </div>
+    </div>
+    <div class="photo">
+      <div class="photo_item photo_item1">
+        <img src="./images/content6_1.jpg" alt="인스타그램사진">
+      </div>
+      <div class="photo_item photo_item2">
+        <img src="./images/content6_2.jpg" alt="인스타그램사진">
+      </div>
+      <div class="photo_item photo_item3">
+        <img src="./images/content6_3.jpg" alt="인스타그램사진">
+      </div>
+      <div class="photo_item photo_item4">
+        <img src="./images/content6_4.jpg" alt="인스타그램사진">
+      </div>
+      <div class="photo_item photo_item5">
+        <img src="./images/content6_5.jpg" alt="인스타그램사진">
+      </div>
+      <div class="photo_item photo_item6">
+        <img src="./images/content6_6.jpg" alt="인스타그램사진">
+      </div>
+      <div class="photo_item photo_item7">
+        <img src="./images/content6_7.jpg" alt="인스타그램사진">
+      </div>
+      <div class="photo_item photo_item8">
+        <img src="./images/content6_8.jpg" alt="인스타그램사진">
+      </div>
+      <div class="photo_item photo_item9">
+        <img src="./images/content6_9.jpg" alt="인스타그램사진">
+      </div>
+      <div class="photo_item photo_item10">
+        <img src="./images/content6_10.jpg" alt="인스타그램사진">
+      </div>
+      <div class="photo_item photo_item11">
+        <img src="./images/content6_11.jpg" alt="인스타그램사진">
+      </div>
+      <div class="photo_item photo_item12">
+        <img src="./images/content6_12.jpg" alt="인스타그램사진">
+      </div>
+      <div class="photo_item photo_item13">
+        <img src="./images/content6_13.jpg" alt="인스타그램사진">
+      </div>
+      <div class="photo_item photo_item14">
+        <img src="./images/content6_14.jpg" alt="인스타그램사진">
+      </div>
+      <div class="photo_item photo_item15">
+        <img src="./images/content6_15.jpg" alt="인스타그램사진">
+      </div>
+      <div class="photo_item photo_item16">
+        <img src="./images/content6_16.jpg" alt="인스타그램사진">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="txt_wrap">
+      <div class="nav_wrap">
+        <ul class="nav_txt">
+          <li><a href="javascript:;">공지사항</a></li>
+          <li><a href="javascript:;">이용약관</a></li>
+          <li><a href="javascript:;"><b>개인정보처리방침</b></a></li>
+          <li><a href="javascript:;">영상정보처리방침</a></li>
+          <li><a href="javascript:;">매장안내</a></li>
+          <li><a href="javascript:;">고객센터</a></li>
+        </ul>
+        <div class="seletsns_wrap">
+          <div class="select">
+            <div class="select_btn">Global Skinfood
+              <ul class="select_list">
+                <li>US</li>
+                <li>Japan</li>
+                <li>Hong Kong</li>
+                <li>Iraq</li>
+                <li>Turkey</li>
+                <li>Vietnam</li>
+                <li>Thailand</li>
+                <li>Guatemala</li>
+                <li>Bangladesh</li>
+              </ul>
+            </div>
+            <div class="select_btn">Language
+              <ul class="select_list">
+                <li>KOREAN</li>
+                <li>ENGLISH</li>
+              </ul>
+            </div>
+          </div>
+          <div class="sns_txt">
+            <div class="img">
+              <a href="https://www.youtube.com/channel/UCKyIfDxlcdTBhUzv_RsuR-g" target="_blank">
+                <img src="../images/footer_sns_유튜브.png" alt="유튜브링크아이콘">
+              </a>
+            </div>
+            <div class="img">
+              <a href="https://www.facebook.com/theskinfood.kr" target="_blank">
+                <img src="../images/footer_sns_페이스북.png" alt="페이스북링크아이콘">
+              </a>
+            </div>
+            <div class="img">
+              <a href="https://www.instagram.com/skinfood_official/" target="_blank">
+                <img src="../images/footer_sns_인스타그램.png" alt="인스타그램링크아이콘">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copy_wrap">
+        <ul class="copy_txt">
+          <li class="first">상호 (주)스킨푸드</li>
+          <li>대표이사 구도곤</li>
+          <li>Tel 080-012-7878</li>
+          <li>Fax 02-597-4199</li><br>
+          <li class="first">주소 경기도 안성시 미양면 제2공단1길 104 스킨푸드</li><br>
+          <li class="first">사업자등록번호 125-81-54503</li>
+          <li>통신사업자번호 제2005-00050호</li>
+          <li>개인정보 보호 책임자 옥봉근</li><br>
+          <li class="first">제휴문의 webmaster@theskinfood.com</li>
+          <li>마케팅제휴문의 : sf_mkt@theskinfood.com</li><br>
+          <li class="first">국내영업 문의 hjimp@theskinfood.com</li>
+          <li>해외영업 문의 overseas@theskinfood.com</li>
+        </ul>
+        <ul class="copy_txt_mobile">
+          <li>상호 (주)스킨푸드 | 대표이사 구도곤</li>
+          <li>Tel 080-012-7878 | Fax 02-597-4199</li>
+          <li>주소 경기도 안성시 미양면 제2공단1길 104 스킨푸드</li>
+          <li>사업자등록번호 125-81-54503</li>
+          <li>통신사업자번호 제2005-00050호</li>
+          <li>개인정보 보호 책임자 옥봉근</li>
+          <li>제휴문의 webmaster@theskinfood.com</li>
+          <li>마케팅제휴문의 sf_mkt@theskinfood.com</li>
+          <li>국내영업 문의 hjimp@theskinfood.com</li>
+          <li>해외영업 문의 overseas@theskinfood.com</li>
+        </ul>
+        <div class="lang_mobile">
+          <span><strong>KOREAN</strong></span>
+          <span>ENGLISH</span>
+        </div>
+        <div class="cs_txt">
+          <p class="cs_txt1">고객센터</p>
+          <p class="cs_txt2">080-012-7878</p>
+          <div class="cs_txt_wrap">
+            <p class="cs_txt3">평일 09:00 ~ 17:00</p>
+            <p class="cs_txt4">점심시간 11:30 ~ 12:30</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="empty"></div>
+
+  <div class="top_btn">
+    맨위로
+  </div>
+</body>
+</html>
