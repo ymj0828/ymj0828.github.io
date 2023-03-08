@@ -90,18 +90,18 @@ $(() => {
 		if(e.wheelDelta <= -120 && isWheel == false && secIndex < section.length-1){
 			isWheel = true;
 			secIndex++;
-			scrollSlide(secIndex)
+			scrollSlide(secIndex, 1000)
 			headopa()
 		}else if(e.wheelDelta >= 120 && isWheel == false && secIndex > 0){
 			isWheel = true;
 			secIndex--;
-			scrollSlide(secIndex)
+			scrollSlide(secIndex, 1000)
 			headopa()
 		}
 	}
 
-  function scrollSlide(index){
-		$('body, html').stop().animate({scrollTop:windowHeight*index}, 1000, 'easeOutCubic', function(){
+  function scrollSlide(index, time){
+		$('body, html').stop().animate({scrollTop:windowHeight*index}, time, 'easeOutCubic', function(){
 			isWheel = false;
 		})
   }
@@ -321,7 +321,7 @@ $(() => {
 	$(window).resize(() => {
 		windowHeight = $(window).innerHeight()
 		section.css({height:windowHeight})
-		scrollSlide(secIndex)
+		scrollSlide(secIndex, 0)
 	});
     
 }); 
