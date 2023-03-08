@@ -72,7 +72,7 @@ const con2data = {
 $(() => {
 
 	$('header').css({height:'80px'})
-	$('header').css({transition:'1s 3s ease-in'})
+	$('header').css({transition:'height 1s 3s ease-in'})
 
   history.scrollRestoration = "manual"
 

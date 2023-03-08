@@ -45,7 +45,7 @@ header{
 	border-radius: 50%;
 	text-align: center;
 	padding: 20px;
-	transform: translateY(20%);
+	transform: transform translateY(20%);
 	opacity: 0;
 	transition: .8s ease-in-out;
 }
@@ -173,7 +173,7 @@ header{
 	flex: 1;
 	transform: translateX(0px);
 	opacity: 0;
-	transition: .8s ease-in-out;
+	transition: transform .8s ease-in-out;
 }
 #subCont3 .areaBx .areaIbx:nth-child(even) .txtBx.on{
 	transform: translateX(-20px);
