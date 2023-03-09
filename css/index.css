@@ -5,61 +5,67 @@
 body{
   padding: 50px;
 }
-.title{
+.page_tit{
   font-size: 50px;
   margin-bottom: 100px;
   font-weight: bold;
 }
-.first_wrap{
-  flex: 1;
-}
 .portfolio_wrap{
   display: flex;
 }
-.profile{
+.first_wrap{
+  flex: 1.1;
+}
+.first_wrap .profile{
   margin-bottom: 20px;
 }
-.profile .name{
-  font-size: 20px;
+
+.first_wrap .profile>p{
+  font-size: 25px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
-.profile table{
+
+.first_wrap .profile .name{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.first_wrap .profile table{
   height: 100px;
 }
-.profile table tr{
+.first_wrap .profile table tr{
 }
-.profile table tr th{
+.first_wrap .profile table tr th{
   text-align: left;
 }
-.profile table tr td{
+.first_wrap .profile table tr td{
   padding-left: 20px;
 }
 
-.skill{
+.first_wrap .skill{
 
 }
-.skill .graph_wrap{
+.first_wrap .skill .graph_wrap{
   width: 100%;
   margin-bottom: 15px;
 }
-.skill .graph_wrap p{
+.first_wrap .skill .graph_wrap p{
   padding: 0 0 3px 9px;
   color: #888;
 }
-.skill .graph_wrap .graph{
+.first_wrap .skill .graph_wrap .graph{
   border-radius: 20px;
   background: #c1c1c1;
   width: 100%;
   height: 30px;
 }
-.skill .graph_wrap .graph span{
+.first_wrap .skill .graph_wrap .graph span{
   display: inline-block;
   height: 30px;
   background-color: blue;
   border-radius: 20px;
 }
 .second_wrap{
-  flex: 1;
-  margin-left: 20px;
+  flex: 0.9;
+  margin-left: 100px;
 }
