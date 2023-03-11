@@ -2,19 +2,17 @@
 
 @import url(reset.css);
 
-@font-face {
+@font-face{
   font-family: 'NanumSquareNeo-Variable';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
-  font-weight: normal;
-  font-style: normal;
 }
-
 
 body{
   font-family: 'NanumSquareNeo-Variable';
   padding: 50px;
   background-color: #f9deaf;
 }
+
 .page_tit{
   font-size: 48px;
   margin-bottom: 100px;
@@ -44,18 +42,16 @@ body{
   margin-bottom: 15px;
 }
 .first_wrap .profile table{
-  height: 80px;
+  height: 130px;
   font-size: 16px;
-}
-.first_wrap .profile table tr{
 }
 .first_wrap .profile table tr th{
   text-align: left;
+  font-weight: bold;
 }
 .first_wrap .profile table tr td{
   padding-left: 20px;
 }
-
 .first_wrap .skill .graph_wrap{
   width: 100%;
   margin-bottom: 15px;
@@ -81,12 +77,10 @@ body{
   box-sizing: border-box;
   font-size: 12px;
 }
+
 .second_wrap{
   flex: 0.9;
   margin-left: 100px;
-}
-.second_wrap .sec_tit{
-
 }
 .second_wrap .portfolio{
   display: flex;
@@ -105,15 +99,14 @@ body{
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  transition: background-color .3s;
+  transition: background-color .5s;
   flex-wrap: wrap;
 }
 .second_wrap .portfolio .pf_content:first-child{
   margin-bottom: 20px;
-
 }
-.second_wrap .portfolio .pf_content:last-child{
-
+.second_wrap .portfolio .pf_content:hover{
+  background: #e8b352;
 }
 .second_wrap .portfolio .pf_content .img{
   position: absolute;
@@ -129,7 +122,7 @@ body{
   padding: 4px;
   aspect-ratio: 1.7;
   box-sizing: border-box;
-  z-index: -1;
+  z-index: 1;
 }
 .second_wrap .portfolio .pf_content a{
   display: none;
@@ -143,30 +136,26 @@ body{
 .second_wrap .portfolio .pf_content a:first-of-type{
   margin-right: 20px;
 }
+.second_wrap .portfolio .pf_content:hover a{
+  display: block;
+}
+.second_wrap .portfolio .pf_content:hover a:hover{
+  background-color: rgba(196, 20, 41, 0.8);
+}
 .second_wrap .portfolio .pf_content p{
   display: none;
   flex-basis: 100%;
   text-align: center;
   font-size: 20px;
 }
-.second_wrap .portfolio .pf_content:hover{
-  background: #e8b352;
-}
-.second_wrap .portfolio .pf_content:hover a{
-  display: block;
-}
 .second_wrap .portfolio .pf_content:hover p{
   display: block;
-}
-.second_wrap .portfolio .pf_content:hover a:hover{
-  background-color: rgba(196, 20, 41, 0.8);
 }
 
 @media screen and (max-width: 720px){
   html{
     font-size: 14px;
   }
-
   .second_wrap{
     margin-left: 30px;
   }
