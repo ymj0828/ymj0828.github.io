@@ -7,18 +7,20 @@ body{
   background-color: #f9deaf;
 }
 .page_tit{
-  font-size: 50px;
+  font-size: 48px;
   margin-bottom: 100px;
   font-weight: bold;
+  color: #c41428;
 }
 .portfolio_wrap{
   display: flex;
 }
 
 .sec_tit{
-  font-size: 25px;
+  font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #c41428;
 }
 
 .first_wrap{
@@ -28,12 +30,13 @@ body{
   margin-bottom: 40px;
 }
 .first_wrap .profile .name{
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 15px;
 }
 .first_wrap .profile table{
   height: 80px;
+  font-size: 1rem;
 }
 .first_wrap .profile table tr{
 }
@@ -44,9 +47,6 @@ body{
   padding-left: 20px;
 }
 
-.first_wrap .skill{
-
-}
 .first_wrap .skill .graph_wrap{
   width: 100%;
   margin-bottom: 15px;
@@ -66,9 +66,10 @@ body{
   height: 30px;
   background-color: #c41428;
   border-radius: 20px;
-  text-align: left;
+  text-align: right;
   line-height: 28px;
-  padding-left: 10px;
+  padding-right: 10px;
+  box-sizing: border-box;
 }
 .second_wrap{
   flex: 0.9;
@@ -84,20 +85,74 @@ body{
   align-items: center
 }
 .second_wrap .portfolio .pf_content{
-  width: 300px;
+  position: relative;
+  width: 100%;
+  max-width: 300px;
   height: 200px;
-  background-color: #fff;
   border-radius: 20px;
   border: #c41428 solid 3px;
   display: flex;
   padding: 20px;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  transition: background-color .3s;
 }
 .second_wrap .portfolio .pf_content:first-child{
   margin-bottom: 20px;
+
+}
+.second_wrap .portfolio .pf_content:last-child{
+
+}
+.second_wrap .portfolio .pf_content .img{
+  position: absolute;
+  width: 50%;
+}
+.second_wrap .portfolio .pf_content:hover .img{
+  display: none;
+}
+.second_wrap .portfolio .pf_content img{
+  border-radius: 10px;
+  width: 100%;
 }
 .second_wrap .portfolio .pf_content a{
-  width: 50px;
+  display: none;
   height: 50px;
+  line-height: 50px;
   flex: 1;
+  text-align: center;
+  background-color: #c41428;
+  border-radius: 10px;
+}
+.second_wrap .portfolio .pf_content a:first-of-type{
+  margin-right: 20px;
+}
+.second_wrap .portfolio .pf_content:hover{
+  background: #e8b352;
+}
+.second_wrap .portfolio .pf_content:hover a{
+  display: block;
+}
+
+@media screen and (max-width: 720px){
+  html{
+    font-size: 14px;
+  }
+
+  .second_wrap{
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 620px){
+  .portfolio_wrap{
+    flex-direction: column;
+  }
+  .first_wrap .skill{
+    margin-bottom: 40px;
+  }
+  .second_wrap{
+    margin-left: 0;
+  }
 }
