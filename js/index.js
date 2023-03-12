@@ -1,7 +1,10 @@
-$(() => {
+$(()=>{
 
-      $('.graph_wrap:eq(0) span').stop().animate({width:'90%'}, 500);
-      $('.graph_wrap:eq(1) span').stop().animate({width:'90%'}, 500);
-      $('.graph_wrap:eq(2) span').stop().animate({width:'75%'}, 500);
+	const graph_span = document.querySelectorAll('.graph span')
+	const width_arr = ['90%', '90%', '75%']
+
+	graph_span.forEach((ele, num)=>{
+		ele.style.width = width_arr[num]
+	});
 
 });
