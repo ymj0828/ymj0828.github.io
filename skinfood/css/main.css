@@ -13,6 +13,9 @@
 	opacity: 1;
 }
 
+/* 2. 메인 영역 */
+/* 2-1. 컨텐츠1 */
+/* 2-1-1. 슬라이드 영역 */
 #content1 .main_slide{
   margin-bottom: 0;
 }
@@ -42,6 +45,7 @@
   display: none;
 }
 
+/* 배너 영역 */
 .banner{
   margin-top: 30px;
 }
@@ -71,10 +75,12 @@
   vertical-align: bottom;
 }
 
+/* 2-2. 컨텐츠2 */
 #content2{
   margin-top: 80px;
   background: url(../images/content2_스탬프.png) no-repeat top right;
 }
+/* 2-2-1. 슬라이드 영역 */
 #content2 .recom_slide{
   max-width: 1040px;
   margin: 40px auto 0;
@@ -150,6 +156,7 @@ li .txt3 .txt4 .rev{
   font-weight: bold;
 }
 
+/* 2-3. 컨텐츠3 */
 #content3{
   margin-top: 80px;
   background: url(../images/content3_bg.jpg) center/cover;
@@ -161,6 +168,7 @@ li .txt3 .txt4 .rev{
   margin-top: 40px;
   text-align: center;
 }
+/* 2-3-1. 슬라이드 영역 */
 #content3 .populer_slide{
   margin: 40px auto 0;
   max-width: 1040px;
@@ -236,10 +244,12 @@ li .img .icon_wrap .cart{
   right: -30px;
 }
 
+/* 2-4. 컨텐츠4 */
 #content4{
   margin-top: 70px;
   background: url(../images/content4_스탬프.png) no-repeat bottom right;
 }
+/* 2-4-1. 카테고리 영역 */
 #content4 .cat_item{
   max-width: 1040px;
   display: flex;
@@ -264,6 +274,7 @@ li .img .icon_wrap .cart{
   display: block;
   text-align: center;
 }
+/* 2-4-2. 슬라이드 영역 */
 #content4 .cat_slide{
   max-width: 1040px;
   margin: 0 auto;
@@ -281,8 +292,14 @@ li .img .icon_wrap .cart{
   position: absolute;
 }
 
+/* 2-5. 컨텐츠5 */
 #content5{
   margin-top: 80px;
+}
+/* 2-5-1. 슬라이드 영역 */
+#content5 .review_slide{
+  max-width: 1040px;
+  margin: 32px auto 0;
 }
 #content5 .review_slide::before{
   position: absolute;
@@ -301,10 +318,6 @@ li .img .icon_wrap .cart{
     bottom:20px;
   }
 }
-#content5 .review_slide{
-  max-width: 1040px;
-  margin: 32px auto 0;
-}
 #content5 .review_slide li img{
   width: 100%;
 }
@@ -318,10 +331,12 @@ li .img .icon_wrap .cart{
 #content5 .review_slide .slick-next{
   right: -50px;
 }
+/* 2-5-2. 모바일 슬라이드 영역 */
 #content5 .review_slide_mobile{
   display: none;
 }
 
+/* 2-6. 컨텐츠6 */
 #content6{
   max-width: 1040px;
   overflow: hidden;
@@ -369,6 +384,7 @@ li .img .icon_wrap .cart{
   font-size: 1rem;
   display: block;
 }
+/* 2-6-1. 그리드 영역 */
 #content6 .photo{
   display: grid;
   grid-template-columns: repeat(10, 1fr);
