@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>스킨푸드</title>
 
@@ -18,7 +17,9 @@
 
 </head>
 <body>
+  <!-- 1. 헤더 영역 -->
   <header>
+    <!-- 1-1. 탑메뉴-->
     <div class="tmenu_wrap">
       <div class="tmenu">
         <ul class="login">
@@ -36,11 +37,13 @@
     </div>
     <div class="menu_wrap">
       <div class="menu">
+        <!-- 1-2. 로고 -->
         <h1 class="logo">
           <a href="./index.html">
             <img src="./images/스킨푸드로고.png" alt="스킨푸드로고">
           </a>
         </h1>
+        <!-- 1-3. 메뉴 -->
         <ul class="gnb">
           <li><a href="javascript:;">상품</a>
             <ul class="gnb_2depth gnb_first">
@@ -164,6 +167,7 @@
             </ul>
           </li>
         </ul>
+        <!-- 1-4. 아이콘 -->
         <div class="gnb_icon">
           <a href="javascript:;" class="search"></a>
           <a href="javascript:;" class="basket"></a>
@@ -177,6 +181,7 @@
         </div>
       </div>
     </div>
+    <!-- 1-5. 모바일 메뉴 -->
     <ul class="mgnb">
       <li><a href="./index.html">홈</a></li>
       <li><a href="javascript:;">베스트&신제품</a></li>
@@ -186,6 +191,7 @@
     </ul>
   </header>
 
+  <!-- 모바일 퀵메뉴 -->
   <ul class="mquick">
     <li><a href="./index.html">홈</a></li>
     <li><a href="javascript:;">카테고리</a></li>
@@ -194,7 +200,10 @@
     <li><a href="javascript:;">최근본상품</a></li>
   </ul>
 
+  <!-- 2. 메인 영역 -->
+  <!-- 2-1. 컨텐츠1 -->
   <div id="content1">
+    <!-- 2-1-1. 슬라이드 영역 -->
     <ul class="main_slide">
       <li><img src="./images/content1_1.jpg" alt="슬라이드포스터"></li>
       <li><img src="./images/content1_2.jpg" alt="슬라이드포스터"></li>
@@ -205,6 +214,7 @@
       <li><img src="./images/content1_7.jpg" alt="슬라이드포스터"></li>
       <li><img src="./images/content1_8.jpg" alt="슬라이드포스터"></li>
     </ul>
+    <!-- 2-1-2. 모바일 슬라이드 영역 -->
     <ul class="main_slide_mobile">
       <li><img src="./images/content1_1_mobile.jpg" alt="모바일슬라이드포스터"></li>
       <li><img src="./images/content1_2_mobile.jpg" alt="모바일슬라이드포스터"></li>
@@ -216,13 +226,18 @@
       <li><img src="./images/content1_8_mobile.jpg" alt="모바일슬라이드포스터"></li>
     </ul>
   </div>
+
+  <!-- 배너 영역 -->
   <div class="banner">
     <img src="./images/쿠폰배너.jpg" alt="쿠폰배너">
   </div>
+
+  <!-- 2-2. 컨텐츠2 -->
   <div id="content2" class="content">
     <p class="scroll">
       <a href="javascript:;"><strong>한 눈에 보는 추천 제품</strong></a>
     </p>
+    <!-- 2-2-1. 슬라이드 영역 -->
     <ul class="recom_slide scroll">
       <li>
         <div class="recom_top">
@@ -334,8 +349,11 @@
       </li>
     </ul>
   </div>
+
+  <!-- 2-3. 컨텐츠3 -->
   <div id="content3">
     <p class="scroll"><a href="javascript:;">요즘 뜨는 <strong>상품</strong></a></p>
+    <!-- 2-3-1. 슬라이드 영역 -->
     <ul class="populer_slide scroll">
       <li>
         <div class="img">
@@ -555,11 +573,13 @@
       </li>
     </ul>
   </div>
-  
+
+  <!-- 2-4. 컨텐츠4 -->
   <div id="content4" class="content">
     <p class="scroll">
       <strong><a href="javascript:;">카테고리 별 인기템</a></strong>
     </p>
+    <!-- 2-4-1. 슬라이드 영역 -->
     <ul class="cat_item scroll">
       <li>
         <img src="./images/content4_cat_1.png" alt="카테고리아이콘">
@@ -606,10 +626,12 @@
     </ul>
   </div>
 
+  <!-- 2-5. 컨텐츠5 -->
   <div id="content5" class="content">
     <p class="scroll">
       <strong><a href="javascript:;">포토 리뷰</a></strong>
     </p>
+    <!-- 2-5-1. 슬라이드 영역 -->
     <ul class="review_slide scroll">
       <li><img src="./images/content5_1.png" alt="슬라이드포스터"></li>
       <li><img src="./images/content5_2.png" alt="슬라이드포스터"></li>
@@ -634,10 +656,12 @@
     </ul>
   </div>
 
+  <!-- 배너 영역 -->
   <div class="banner">
     <img src="./images/브랜드배너.png" alt="브랜드배너">
   </div>
 
+  <!-- 2-6. 컨텐츠6 -->
   <div id="content6">
     <div class="instalogo">
       <div class="img">
@@ -655,6 +679,7 @@
         <a href="https://www.instagram.com/skinfood_official/" target="_blank">Follow</a>
       </div>
     </div>
+  <!-- 2-6-1. 그리드 영역 -->
     <div class="photo">
       <div class="photo_item photo_item1">
         <img src="./images/content6_1.jpg" alt="인스타그램사진">
@@ -707,6 +732,7 @@
     </div>
   </div>
 
+  <!-- 3. 푸터 영역 -->
   <footer>
     <div class="txt_wrap">
       <div class="nav_wrap">
@@ -803,6 +829,7 @@
   </footer>
   <div class="empty"></div>
 
+  <!-- 탑 버튼 -->
   <div class="top_btn">
     맨위로
   </div>

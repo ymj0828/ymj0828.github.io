@@ -200,7 +200,7 @@ $(() => {
             
 			for(let z in data){
 				switch(z){
-				case "사진1": $("#travel1 .img").html(`<img src="../hanatour/images/content2_${data[z]}.jpg" alt="포스터">`);
+				case "사진1": $("#travel1 .img").html(`<img src="../hanatour/images/content2_${data[z]}.jpg" alt="추천여행포스터">`);
 					break;
 				case "패키지1": $('#travel1 .text1 span').text(data[z]);
 					break;
@@ -210,7 +210,7 @@ $(() => {
 					break;
 				case "금액1": $('#travel1 .text3 strong').text(data[z]);
 					break;
-				case "사진2": $("#travel2 .img").html(`<img src="../hanatour/images/content2_${data[z]}.jpg" alt="포스터">`);
+				case "사진2": $("#travel2 .img").html(`<img src="../hanatour/images/content2_${data[z]}.jpg" alt="추천여행포스터">`);
 					break;
 				case "패키지2": $('#travel2 .text1 span').text(data[z]);
 					break;
@@ -220,7 +220,7 @@ $(() => {
 					break;
 				case "금액2": $('#travel2 .text3 strong').text(data[z]);
 					break;
-				case "사진3": $("#travel3 .img").html(`<img src="../hanatour/images/content2_${data[z]}.jpg" alt="포스터">`);
+				case "사진3": $("#travel3 .img").html(`<img src="../hanatour/images/content2_${data[z]}.jpg" alt="추천여행포스터">`);
 					break;
 				case "패키지3": $('#travel3 .text1 span').text(data[z]);
 					break;
