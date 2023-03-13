@@ -147,7 +147,6 @@ $(() => {
 	let fast = 0;
 	let block = 0;
 	$('.mobtn').click(function(){
-		/// 광클금지 ////////
 		if (fast) return;
 		fast = 1;
 		setTimeout(()=>fast = 0, 900);
