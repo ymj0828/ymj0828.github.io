@@ -22,15 +22,15 @@ header .menu_wrap .menu .mobile_nav_btn{
   margin: 0 auto;
 }
 .cat_depth{
-  margin: 10px 0 50px;
   display: flex;
+  margin: 10px 0 50px;
 }
 .cat_depth li{
-  font-size: 12px;
   padding-right: 18px;
   margin-right: 11px;
-  background: url(../images/faq_cat_depth_화살표.png) no-repeat right;
   color: #888;
+  font-size: 12px;
+  background: url(../images/faq_cat_depth_화살표.png) no-repeat right;
 }
 .cat_depth li:last-child{
   padding-right: 0px;
@@ -46,15 +46,15 @@ header .menu_wrap .menu .mobile_nav_btn{
 }
 /* 2-1. 사이드 메뉴 */
 .content_wrap .side_wrap{
-  border-top: 3px solid #000;
   padding: 30px 25px;
   margin-right: 40px;
   flex-shrink: 0;
+  border-top: 3px solid #000;
 }
 .content_wrap .side_wrap .title{
+  margin-bottom: 28px;
   font-size: 27px;
   font-weight: bold;
-  margin-bottom: 28px;
 }
 .content_wrap .side_wrap .list li{
   margin-top: 20px;
@@ -80,12 +80,12 @@ header .menu_wrap .menu .mobile_nav_btn{
   letter-spacing: -0.2px;
 }
 .content_wrap .side_wrap .info .inq_btn{
+  padding: 16px;
   margin-top: 20px;
   font-size: 18px;
-  padding: 16px;
   text-align: center;
-  border: 1px solid #222;
   font-weight: bold;
+  border: 1px solid #222;
 }
 /* 2-2. 게시판 영역 */
 .content_wrap .board_wrap{
@@ -94,41 +94,41 @@ header .menu_wrap .menu .mobile_nav_btn{
 .content_wrap .board_wrap .title{
   position: relative;
   display: inline-block;
-  font-size: 24px;
-  font-weight: bold;
   padding: 0 7px;
   margin-bottom: 21px;
+  font-size: 24px;
+  font-weight: bold;
 }
 .content_wrap .board_wrap .title::after{
   position: absolute;
-  bottom: -5px;
-  left: 0;
   display: inline-block;
   width: 100%;
   height: 14px;
-  background: #fdb814;
+  left: 0;
+  bottom: -5px;
   content: "";
+  background: #fdb814;
   z-index: -1;
 }
 .content_wrap .board_wrap .search{
   border-bottom: 2px solid #fdb814;
 }
 .content_wrap .board_wrap .search::before{
-  background: url(../images/검색아이콘.png) no-repeat left/23px;
-  content: '';
+  display: inline-block;
   width: 24px;
   height: 24px;
-  display: inline-block;
+  content: '';
+  background: url(../images/검색아이콘.png) no-repeat left/23px;
   transform: translateY(7px);
   cursor: pointer;
 }
 .content_wrap .board_wrap .search input{
-  border: none;
-  font-size: 15px;
-  color: #888;
-  padding: 0 0 10px 15px;
   display: inline-block;
   width: calc(100% - 65px);
+  padding: 0 0 10px 15px;
+  color: #888;
+  font-size: 15px;
+  border: none;
 }
 .content_wrap .board_wrap .search input:focus{
   outline: none;
@@ -143,13 +143,13 @@ header .menu_wrap .menu .mobile_nav_btn{
 }
 .content_wrap .board_wrap .inq strong::after{
   position: absolute;
-  left: 0;
-  bottom: -1px;
   display: inline-block;
   width: 100%;
   height: 1px;
-  background: #222;
+  left: 0;
+  bottom: -1px;
   content: '';
+  background: #222;
 }
 .content_wrap .board_wrap .tab{
   display: flex;
@@ -175,10 +175,10 @@ header .menu_wrap .menu .mobile_nav_btn{
 }
 .content_wrap .board_wrap .tab li:not(:first-child)::before{
   position: absolute;
-  left: 0;
   display: inline-block;
   width: 1px;
   height: 14px;
+  left: 0;
   content: "";
   background: #999;
 }
@@ -191,29 +191,29 @@ header .menu_wrap .menu .mobile_nav_btn{
   border-bottom: 1px solid #212121;
 }
 .content_wrap .board_wrap .board_list li{
-  padding-left: 20px;
   display: flex;
+  padding-left: 20px;
   justify-content: space-between;
   border-top: 1px solid #ddd;
   cursor: pointer;
 }
 .content_wrap .board_wrap .board_list li .board_title{
+  padding: 24px 0;
   font-size: 15px;
   font-weight: bold;
-  padding: 24px 0;
 }
 .content_wrap .board_wrap .board_list li .board_title .board_answer{
   display: none;
-  color: #888;
-  font-weight: normal;
   padding: 23px 0 0 16px;
+  font-weight: normal;
   line-height: 1.5;
+  color: #888;
 }
 .content_wrap .board_wrap .board_list li .board_btn{
   width: 60px;
-  background: url(../images/faq_icon_plus.png) no-repeat center;
   height: 63px;
   flex-shrink: 0;
+  background: url(../images/faq_icon_plus.png) no-repeat center;
 }
 .content_wrap .board_wrap .board_list li .board_btn.active{
   background: url(../images/faq_icon_minus.png) no-repeat center;

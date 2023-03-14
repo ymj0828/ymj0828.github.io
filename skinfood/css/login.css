@@ -9,17 +9,17 @@ body{
 
 header .back_btn{
   display: inline-block;
-  margin-top: 40px;
-  padding-left: 10px;
-  font-size: 13px;
-  border: 1px solid #efefef;
-  border-radius: 30px;
   width: 90px;
   height: 30px;
+  padding-left: 10px;
+  margin-top: 40px;
+  box-sizing: border-box;
+  font-size: 13px;
   line-height: 28px;
   text-align: center;
+  border: 1px solid #efefef;
+  border-radius: 30px;
   background: url(../images/login_뒤로가기버튼.png) no-repeat 10px 9px/8px;
-  box-sizing: border-box;
 }
 header .back_btn:hover{
   background-color: #fafafa;
@@ -34,14 +34,14 @@ section.login_kakao{
   margin: 40px 70px;
 }
 section.login_kakao .title{
+  margin-bottom: 25px;
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: 25px;
 }
 section.login_kakao .txt{
+  margin-bottom: 40px;
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 40px;
 }
 section.login_kakao .kakao_btn{
   height: 60px;
@@ -55,54 +55,54 @@ section.login_kakao .kakao_btn{
 }
 section.login_member{
   position: relative;
-  margin: 0 70px;
   padding: 36px 0;
+  margin: 0 70px;
   border-top: 1px solid #f5f5f5;
 }
 section.login_member::after{
-  content: '또는';
   position: absolute;
   top: -8px;
   left: 50%;
+  padding: 0 10px;
+  content: '또는';
+  color: #b2b2b2;
+  font-size: 12px;
   transform: translateX(-50%);
   background: #fff;
-  font-size: 12px;
-  color: #b2b2b2;
-  padding: 0 10px;
 }
 section.login_member .tabmenu{
   display: flex;
   margin-bottom: 25px;
 }
 section.login_member .tabmenu li{
+  height: 45px;
+  flex: 1;
+  box-sizing: border-box;
+  font-size: 13px;
+  color: #888;
+  line-height: 43px;
+  text-align: center;
   border-radius: 5px 0 0 5px;
   border: 1px solid #efefef;
-  height: 45px;
-  line-height: 43px;
-  flex: 1;
-  text-align: center;
-  font-size: 13px;
   background: #fafafa;
-  color: #888;
-  box-sizing: border-box;
   cursor: pointer;
 }
 section.login_member .tabmenu li:last-child{
   border-radius: 0 5px 5px 0;
 }
 section.login_member .tabmenu li.active{
-  border: 1px solid #aaa;
-  background: #fff;
   color: #222;
   font-weight: bold;
+  border: 1px solid #aaa;
+  background: #fff;
 }
 section.login_member .form{
   display: flex;
   flex-direction: column;
 }
 section.login_member .form input{
-  padding-left: 15px;
   height: 50px;
+  padding-left: 15px;
   border: 1px solid #ddd;
   border-radius: 5px 5px 0 0;
 }
@@ -115,15 +115,15 @@ section.login_member .form input:focus{
 }
 section.login_member .submit{
   height: 45px;
-  background: #31363d;
-  font-size: 15px;
-  color: #fff;
-  border-radius: 5px;
-  text-align: center;
-  box-sizing: border-box;
-  line-height: 45px;
   margin-top: 10px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 15px;
   font-weight: bold;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 5px;
+  background: #31363d;
   cursor: pointer;
 }
 footer{
